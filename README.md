@@ -1,4 +1,4 @@
-# POS im III. Jahrgang / 5. Semester Kolleg der HTL Spengergasse
+# POS
 
 ## Wichtiges zum Start
 
@@ -82,7 +82,7 @@ Installiere die neueste Version von [git](https://git-scm.com/downloads) mit den
 Gehe danach in die Windows Eingabeaufforderung (cmd) und führe in einem geeigneten Ordner
 (z. B. *C:\POS*) den Befehl
 ```
-git clone https://github.com/schletz/Pos3xhif.git
+git clone https://github.com/balluch/POS.git
 ```
 
 Soll der neueste Stand vom Server geladen werden, führe die Datei *resetGit.cmd* aus. Achtung:
