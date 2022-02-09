@@ -97,8 +97,7 @@ an den sogenannten *Conventions*, die wir in den nachfolgenden Klassen einhalten
 
 - Properties mit dem Namen *Id* werden automatisch als Primärschlüssel definiert.
 - Id Properties mit dem Datentyp *int* werden automatisch zu AutoIncrement Feldern.
-- Properties vom Typ *List&lt;Typname&gt;* finden "automatisch" ihren Weg in die richtige Tabelle. So
-  verweist das Property *Pupils* in den vorigen LINQ Beispielen automatisch auf alle Schüler dieser Klasse.  
+- Properties vom Typ *List&lt;Typname&gt;* finden "automatisch" ihren Weg in die richtige Tabelle.  
 - Properties vom Typ *Typname* verweisen automatisch auf die Tabelle dieses Typs. So referenziert
   das Property vom Typ *Store* automatisch auf die Tabelle *Store*.
 - Fremdschlüsselfelder mit dem Namen *NavigationProperty + PK Name* (wie *StoreId*) werden automatisch zum
@@ -173,7 +172,7 @@ bei Bedarf gesetzt werden:
 var cat = new ProductCategory(name: "Spielzeug") {NameEn = "Toys"};
 ```
 
-Es ist auch möglich, ein *Argument mit default value* zu dafür zu definieren. Diese Form hat den Vorteil, dass
+Es ist auch möglich, ein *Argument mit default value* dafür zu definieren. Diese Form hat den Vorteil, dass
 das zusätzliche Property *nameEn* in IntelliSense erscheint. Durch den default value muss kein
 Wert angegeben werden, d. h. der Konstruktor von ProductCategory kann auch mit einem Argument
 aufgerufen werden.
@@ -242,7 +241,7 @@ public class Product
 
 Der Konstruktor von Product verlangt diesmal den Primärschlüssel (die EAN), da dieser Wert
 von externen Quellen kommt und nicht in der Datenbank generiert wird. Für die Navigation
-verlagen wir nur die Instanz von *ProductCategory*. Den Id Wert für das Fremdschlüsselfeld
+verlangen wir nur die Instanz von *ProductCategory*. Den Id Wert für das Fremdschlüsselfeld
 können wir aus dieser Instanz lesen und müssen es daher nicht als extra Argument anführen.
 
 Nun fehlt noch die Klasse *Offer*, die mit bestehendem Wissen angelegt werden kann:

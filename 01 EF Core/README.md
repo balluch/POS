@@ -31,7 +31,7 @@ ggf. diese Daten. Bei MySQL (MariaDB) muss mit *SELECT VERSION()* die Version de
 herausgefunden und angepasst werden.
 
 Der Standard Adminuser unter MySql ist *root* (ohne Passwort). Bei SQL Server ist das der User
-*sa* mit dem bei *docker run* angegebenen Passwort.
+*sa*.
 
 | Provider             | Package Reference                                                                      | Connection String                                                                                                                      |
 | -------------------- | -------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
@@ -42,8 +42,6 @@ Der Standard Adminuser unter MySql ist *root* (ohne Passwort). Bei SQL Server is
 | SQLite               | `<PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="6.*" />`    | `UseSqlite(@"Data Source=MeineDb.db")`                                                                                                 |
 | SQLite (in-memory)   | `<PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="6.*" />`    | `UseSqlite(@"Data Source=:memory:")`                                                                                                   |
 
-Im Artikel [zu Docker](07_DatabaseFirst/Docker.md) ist beschrieben, wie du zu Docker Images der
-oben genannten Datenbanksysteme kommst.
 
 ### SQLite in-memory Datenbank für Unittests
 
