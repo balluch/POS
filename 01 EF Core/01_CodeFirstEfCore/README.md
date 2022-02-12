@@ -411,7 +411,7 @@ ergeben sich mehrere Vorteile:
   beeinflussen sich die Tests nicht.
 
 Im Programm [CodeFirstDemo](../CodeFirstDemo/CodeFirstDemo.Test) werden die Unittests mit einer
-in-memory durchgeführt. Hier sind auch Infos über den Connectionstring und die Besonderheiten
+in-memory Datenbank durchgeführt. Hier sind auch Infos über den Connectionstring und die Besonderheiten
 im Code abgebildet.
 
 ## Ansehen der Datenbank in DBeaver
