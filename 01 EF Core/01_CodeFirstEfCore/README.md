@@ -490,7 +490,7 @@ Nach dem Test *CreateDatabaseSuccessTest* soll das ER Modell der Datenbank in DB
 aussehen. Die Datenbank wird in *TeamsManager.Test\bin\Debug\net6.0* unter dem Namen
 *Teams.db* angelegt.
 
-![](ermodell20211202.png)
+![](teams_er_model_20211204.png)
 
 > **Hinweis:** Die Klasse *Task* kommt im Namespace System.Threading.Task ebenfalls vor.
 > Bei mehrdeutigen Referenzen muss der volle Klassenname (*Model.Task*) angegeben werden.
