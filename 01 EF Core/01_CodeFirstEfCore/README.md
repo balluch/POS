@@ -473,7 +473,7 @@ Definiere die public Konstruktoren so, dass die benötigten Informationen bei de
 Initialisierung übergeben werden müssen. Für EF Core sind dann protected Konstruktoren
 ohne Parameter anzulegen.
 
-Der Kontext soll den Namen *TeamsContextTests* haben. Weiter unten ist der Mustercode
+Der Kontext soll den Namen *TeamsContext* haben. Weiter unten ist der Mustercode
 für die Definition der Klasse. Er beinhaltet auch eine Methode *Seed()*, die die Datenbank
 mit Musterdaten füllt.
 
