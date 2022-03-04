@@ -2,8 +2,6 @@
 
 > Im Ordner [RichDomainModelDemo](../RichDomainModelDemo) ist ein lauffähiges Beispiel dieser Erklärungen.
 
-**Erweiterter Lehrplaninhalt für 3. JG, verpflichtend für 4. JG**
-
 ## Was ist ein "Rich Domain Model"?
 
 Bis jetzt waren unsere Modelklassen reine datenhaltende Klassen. Sie enthielten
