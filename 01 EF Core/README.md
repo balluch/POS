@@ -2,7 +2,9 @@
 
 ## Inhalt
 
+- [Warum OR Mapping?](00_WhyORMapping/README.md)
 - [Erzeugen von Datenbanken](01_CodeFirstEfCore/README.md)
+- [Erweiterte Konfiguration](02_EnhancedCodeFirst/README.md)
 
 ### Musterprogramme
 
