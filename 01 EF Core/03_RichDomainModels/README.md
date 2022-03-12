@@ -379,8 +379,8 @@ Erweitere das Übungsmodell über die Abgabenverwaltung aus den vorigen Kapiteln
     des Abgabezeitraumes (*ExpirationDate*) liegt. Ist dem nicht so, liefert die
     Methode false.
   - *ReviewHandIn()* aktualisiert die übergebene Abgabe und erzeugt ein *ReviewedHandIn*.
-  - *CalculateAveragePoints()* kann als Property ausgeführt werden und berechnet die
-    durchschnittlichen Punkte der Abgaben. Berücksichtige nur Abgaben vom Typ *ReviewedHandIn*.
+  - *FirstHandInDate()* kann als Property ausgeführt werden und liest das Datum jener 
+    Abgabe aus, die zeitlich gesehen als erstes abgegeben wurde.
   - Überlege, ob durch einen direkten Datenbankzugriff (= Zugriff über eine Instanz
     des DbContext) eine Abgabe (HandIn) ohne Kontrolle eingefügt werden kann. Wie kann
     dies vermieden werden?
