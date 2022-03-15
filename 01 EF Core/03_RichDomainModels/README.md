@@ -379,7 +379,9 @@ Erweitere das Übungsmodell über die Abgabenverwaltung aus den vorigen Kapiteln
     des Abgabezeitraumes (*ExpirationDate*) liegt. Ist dem nicht so, liefert die
     Methode false.
   - *ReviewHandIn()* aktualisiert die übergebene Abgabe und erzeugt ein *ReviewedHandIn*.
-  - *FirstHandInDate()* kann als Property ausgeführt werden und liest das Datum jener 
+  - *CalculateAveragePoints()* kann als Property ausgeführt werden und berechnet die
+    durchschnittlichen Punkte der Abgaben. Berücksichtige nur Abgaben vom Typ *ReviewedHandIn*.
+  - *FirstHandInDate()* kann ebenfalls als Property ausgeführt werden und liest das Datum jener 
     Abgabe aus, die zeitlich gesehen als erstes abgegeben wurde.
   - Überlege, ob durch einen direkten Datenbankzugriff (= Zugriff über eine Instanz
     des DbContext) eine Abgabe (HandIn) ohne Kontrolle eingefügt werden kann. Wie kann
@@ -388,7 +390,7 @@ Erweitere das Übungsmodell über die Abgabenverwaltung aus den vorigen Kapiteln
 Erstelle für die Klasse Task eine Testklasse *TaskTests* im Unittest Projekt. Prüfe danach deine
 Implementierung durch jeweils einen Success-Test pro Methode.
 
-![](teams_model_20220312.png)
+![](teams_model_20220315.png)
 <sup>
-//www.plantuml.com/plantuml/png/dPDTZjCm4CVVUugHU6aXkS0gYXRn0PLWGTjUm9iChS5ngjWfMm5tn-F9rAd94o-P-6zxvZSVldTU3NxipAenoZbuK1rMrLcP4Q5_-ewDhslujG9uzLuFpjkm3NVW_A3jWTHFQa5yrobjvafPbgIJypMBy4tS5J0fHcK2aflDwizgOjlviKNh6UU1WvAXvKTbswrrGTc-wOq9tBgt5Qjr8fXS20I5sm244EBxPLdMqQa4tQDgZZWi11MVqub_VShL9P-TECnAjskEVM_us5pVA_SZpuwq-eQZcq6aEhhaSqC7ju-esY_MN79Vy07zwx0-OmotVgiyxdKWRCFFh16qMrNgS1Zm47PaGdPZ79XRRkrDob0mWq1cLZrMw2yEqFD93uh0227i2GbjVbRFNtjjFPKZcApxUMvBKq3yKYd7qDTYUG8kk4K-V0hX0i-skC80tc0MH0ETqCLIFuN2mtwuCCAQ3HoZYGSUyQpnvzBsBCuG3wKOfnIWnKPtoa1ydNoVpgsfMvGcL3Hyb0qlUrvofPF2DwM_lEAcoiEuW-cFnAmhgR9J8dB9iIqWcoI05qif4pGB4LiY2XRN2jiv7ciBKp8VaSGdBlwluFG2CeXoF9M_h_MxHzkEdVaB
+//www.plantuml.com/plantuml/png/dPFTZjCm48Nl-nGZSPD2yW8eYdQr_5095hJj2ymcGsfmaYfsoguMtXrFnavTaojkwkHuUkRpyUJ6M1pjrEbDhT4OkCUEolACUY8O7dzGRQiANZO0RpweqTZURSDRC7PKVSlgPrmHttUeTAmKHS4wcsSYmlTWbuDND2O2iSrsysVZsVPsQgYtWdClJNdXrq_ODxlUE6LtDsZjkDNGbw9M5m9l4I2utHR0jGZUhukY4bFVz41O7sbSQ-ezVSM_ddvZrRFpXcbq-_eu35hAOls0vcTwEjQgAuukG5pbQ2wUMoxSFH0sNtlzd7h1HxAtxlrCSxli7LewA4VOk8Ve8dYtBB5jHshTJfYG_JGFp3MtifeYHJ2Tm4kKdYZyD0_GqqcDo62CuFO22Mz-mQTlW-ejn-6MvFRJiwrD0VE7f8n0Bs5P1ixbYgpxoI4GMbdp1GRe2ZDd6kWydKJzw8A7m_Wi29aiS9oNkU21pef-hMr7VSQvwDBZT6dGKAqwr727kfwqgxWzquWj2KCsrom-yoSiJLZB-4ev2oXvGld8yZhmgpzsfCW_mn1us9VeitBv-oSMqwjRulUd3NyoikQGZ1l0gxLS65e4mVOs0Ki2fIR64srbb98vydp1ulzkXJ-J1AAOJiNl9RyRwfkfqty1
 </sup>
