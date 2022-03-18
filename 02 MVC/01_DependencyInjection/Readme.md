@@ -21,10 +21,12 @@ Service benötigt den DB-Context:
 
 ```C#
 private readonly TestsAdministratorContext _context;
+private readonly ILogger<SchoolclassService> _logger;
 
-public SchoolclassService(TestsAdministratorContext context)
+public SchoolclassService(TestsAdministratorContext context, ILogger<SchoolclassService> logger)
 {
     _context = context;
+    _logger = logger;
 }
 ```
 
@@ -130,13 +132,11 @@ Im Service wird nicht zwischen GET und POST unterschieden. Diese Methoden manipu
 Im Controller werden die Methoden dann noch aufgerufen. Auch hier wird eine Instanz vom Service benötigt:
 
 ```C#
-private readonly TestsAdministratorContext _context;
-private readonly ILogger<SchoolclassService> _logger;
+private readonly ISchoolclassService _schoolclassService;
 
-public SchoolclassService(TestsAdministratorContext context, ILogger<SchoolclassService> logger)
+public SchoolclassController(ISchoolclassService schoolclassService)
 {
-    _context = context;
-    _logger = logger;
+	_schoolclassService = schoolclassService;
 }
 ```
 
@@ -244,21 +244,21 @@ public async Task<IActionResult> Edit(string id, [Bind("C_ID,C_Department,C_Clas
 ### Delete GET
 
 ```C#
-public async Task<IActionResult> Delete(Guid? id)
+public async Task<IActionResult> Delete(string id)
 {
-    if (id == null)
-    {
-        return NotFound();
-    }
+	if (id == null)
+	{
+		return NotFound();
+	}
 
-    var events = await _eventService.GetSingleOrDefaultAsync(id.Value);
+	var model = await _schoolclassService.GetSingleOrDefaultAsync(id);
 
-    if (events == null)
-    {
-        return NotFound();
-    }
+	if (model == null)
+	{
+		return NotFound();
+	}
 
-    return View(events);
+	return View(model);
 }
 ```
 
@@ -289,7 +289,8 @@ Registrieren der Services in der `Startup.cs`:
 
 ```C#
 services.AddTransient<ISchoolclassService, SchoolclassService>();
-services.AddTransient<ILessonService, LessonService>();
-services.AddTransient<IPeriodService, PeriodService>();
-services.AddTransient<ITeacherService, TeacherService>();
 ```
+
+## DTO
+
+Für den Datenaustausch kann anstatt einem Objekt der jeweiligen Modelklasse ein Data Transfer Object (DTO) verwendet werden.
