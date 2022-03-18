@@ -7,7 +7,7 @@ Wesentlich ist die Entkoppelung der Komponenten. Je feiner und granularer Kompon
 * Eigenes Projekt (.Net Core Class Library)
 * Eigenen Namespace (bzw. Folder) `Services` erstellen
 
-### Event-Service anlegen
+### Service anlegen
 
 Dafür im generiten Namespace eine neue Klasse `SchoolclassService` erstellen. Code kann nun aus dem Controller in diese Klasse transferiert werden. Die Abhängigkeiten zum DB-Context können anschließend aus dem Controller entfernen.
 
