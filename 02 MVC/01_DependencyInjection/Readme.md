@@ -182,7 +182,7 @@ public async Task<IActionResult> Create([Bind("C_ID,C_Department,C_ClassTeacher"
             return StatusCode(500);
         }
     }
-    ViewData["C_ClassTeacher"] = new SelectList(await _techerService.GetAllAsync(), "T_ID", "T_ID", schoolclass.C_ClassTeacher);
+    ViewData["C_ClassTeacher"] = new SelectList(await _teacherService.GetAllAsync(), "T_ID", "T_ID", schoolclass.C_ClassTeacher);
     return View(schoolclass);
 }
 ```
@@ -203,7 +203,7 @@ public async Task<IActionResult> Edit(string id)
     {
         return NotFound();
     }
-    ViewData["C_ClassTeacher"] = new SelectList(await _techerService.GetAllAsync(), "T_ID", "T_ID", schoolclass.C_ClassTeacher);
+    ViewData["C_ClassTeacher"] = new SelectList(await _teacherService.GetAllAsync(), "T_ID", "T_ID", schoolclass.C_ClassTeacher);
     return View(schoolclass);
 }
 ```
@@ -236,7 +236,7 @@ public async Task<IActionResult> Edit(string id, [Bind("C_ID,C_Department,C_Clas
         }
         return RedirectToAction(nameof(Index));
     }
-    ViewData["C_ClassTeacher"] = new SelectList(await _techerService.GetAllAsync(), "T_ID", "T_ID", schoolclass.C_ClassTeacher);
+    ViewData["C_ClassTeacher"] = new SelectList(await _teacherService.GetAllAsync(), "T_ID", "T_ID", schoolclass.C_ClassTeacher);
     return View(schoolclass);
 }
 ```
