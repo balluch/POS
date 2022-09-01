@@ -4,7 +4,7 @@
 
 ### Installation der IDE Visual Studio 2022
 
-Die verbreitetste IDE zur Entwicklung im .NET Bereich ist Visual Studio. Microsoft stellt unserer
+Die verbreitetste IDE zur Entwicklung im .NET Bereich ist Visual Studio. Microsoft stellt der
 Schule eine Lizenz von Visual Studio Enterprise zur Verfügung.
 
 - Lade die Testversion von Visual Studio **Enterprise** von https://visualstudio.microsoft.com/de/downloads/
