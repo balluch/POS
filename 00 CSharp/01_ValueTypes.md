@@ -146,7 +146,7 @@ Durch diesen Operator können wir unsere Berechnung in myInt schreiben. Ob 0 ein
 ist, hängt natürlich von der Aufgabenstellung ab.
 
 ```c#
-myInt = myInt2 ?? 0 + 2;  // Liefert 1, wenn myInt2 null ist.
+myInt = myInt2 ?? 0 + 2;  // Liefert 2, wenn myInt2 null ist.
 ```
 
 Eine weitere Möglichkeit zu prüfen, ob ein nullable Type einen Wert hat, ist die Eigenschaft
