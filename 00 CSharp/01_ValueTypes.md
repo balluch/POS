@@ -120,7 +120,7 @@ folgende Probleme:
 
 Deswegen geht man in C# einen anderen Weg: Man kann sogenannte *nullable Types* definieren. Das sind
 Wertetypen, die auch *null* speichern können. Man erkennt sie an dem ? nach dem Typnamen
-(int?, double?, ...). Überlegen Sie sich, warum das bei Klassen nicht funktioniert bzw. sinnlos ist.
+(int?, double?, ...).
 
 ```c#
 int? myInt2;    // ? bedeutet nullable.
@@ -146,9 +146,7 @@ Durch diesen Operator können wir unsere Berechnung in myInt schreiben. Ob 0 ein
 ist, hängt natürlich von der Aufgabenstellung ab.
 
 ```c#
-myInt = myInt2 ?? 0 + 2;  // Liefert 1, wenn myInt2 null ist. Sehen Sie auf
-                          // https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/
-                          // nach, welcher Operator zuerst ausgeführt wird.
+myInt = myInt2 ?? 0 + 2;  // Liefert 1, wenn myInt2 null ist.
 ```
 
 Eine weitere Möglichkeit zu prüfen, ob ein nullable Type einen Wert hat, ist die Eigenschaft
@@ -164,77 +162,6 @@ if (myInt2.HasValue)
 {
     Console.WriteLine("int2 hat einen Wert, dieser ist " + myInt2.Value);
 }
-```
-
-## Spezialkapitel (nicht prüfungsrelevant): Wertetypen und Methoden
-
-Werden Wertetypen als Parameter übergeben, verhält sich C# wie Java: Sie können den Parameter
-zwar in der Methode setzen, aber der Wert bleibt in der aufrufenden Methode unverändert.
-
-In C# gibt es mit den Schlüsselwörtern *out* und *ref* die Möglichkeit, die Übergabe als
-Referenz zu erreichen. Somit können Sie auch die Variable in der aufrufenden Methode ändern.
-
-Eine gute Übersicht finden Sie auf
-https://www.c-sharpcorner.com/UploadFile/ff2f08/ref-vs-out-keywords-in-C-Sharp/
-
-> **Hinweis:** Dies ist ein spezielles Feature in C# und nicht für den alltäglichen Gebrauch bestimmt.
-> Sie finden solche Übergabearten bei *TryParse()* und in machen Methoden der Task Parallel Library (*Interlocked*)
-
-```c#
-        static void Main(string[] args)
-        {
-            // Seit C# 7 ist die Deklaration im out möglich. Vorher musste
-            // int itemCount
-            // vor dem Aufruf extra deklariert werden.
-            if (GetCount(out int itemCount))
-            {
-                Console.WriteLine($"{itemCount} items found.");
-            }
-
-            // value muss initialisiert werden, da wir mit ref arbeiten.
-            int value = 1;
-            SetValue(ref value);                      // Value ist nun 2
-
-            // Bessere Lösung mit Tuples.
-            (bool success, int count) = BetterGetCount();
-            if (success) { Console.WriteLine($"{count} items found."); }
-
-            // Ganz neu mit C# 8 Pattern matching und dem discard Operator (_)
-            // Vgl. https://docs.microsoft.com/en-us/dotnet/csharp/tutorials/pattern-matching
-            string result = BetterGetCount() switch
-            {
-                (true, 0) => "No items found.",
-                (true, _) => "Some items found.",
-                (false, _) => "Error."
-            };
-            Console.WriteLine(result);
-        }
-
-        /// <summary>
-        /// Demonstration von out
-        /// count muss in der Methode zugewiesen werden, sonst gibt es einen Compilerfehler.
-        /// </summary>
-        static bool GetCount(out int count)
-        {
-            count = 1;
-            return true;
-        }
-
-        static (bool success, int count) BetterGetCount()
-        {
-            return (success: true, count: 1);
-        }
-
-        /// <summary>
-        /// Demonstration von ref
-        /// Der Parameter val muss nicht - im Gegensatz von out - zwangsweise zugewiesen werden.
-        /// </summary>
-        static bool SetValue(ref int val)
-        {
-            if (val != 0) { val++; return true; }
-            return false;
-        }
-
 ```
 
 ## Parsen von Werten
