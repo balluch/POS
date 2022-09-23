@@ -219,8 +219,8 @@ if (DateTime.TryParseExact(
 
 ## Übung
 
-Erstellen wie oben beschrieben das Projekt *TypesDemo*. Ersetze nun den Inhalt der Datei
-*Program.cs* durch den folgenden Code. Implementieren die Funktionen der Klasse TypeExercise,
+Erstelle wie oben beschrieben das Projekt *TypesDemo*. Ersetze nun den Inhalt der Datei
+*Program.cs* durch den folgenden Code. Implementiere die Funktionen der Klasse TypeExercise,
 sodass die Bildschirmausgaben der Musterlösung weiter unten entsprechen.
 
 ```c#
