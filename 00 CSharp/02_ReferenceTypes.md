@@ -224,7 +224,7 @@ p2.firstname = "Max2";         // (3)
           Named arguments helfen, die Zuordnung der Parameter deutlicher zu machen. Außerdem kann
           keine Verwechslung der Reihenfolge passieren (beides sind string Typen).
 - **(2)** Nun habe ich eine Instanz, auf die 2 Referenzvariablen (*p* und *p2*) zeigen.
-- **(3)** *p2.firstname* liefert natürlich auch Max2.
+- **(3)** *p.firstname* liefert auch Max2.
 
 In Zusammenhang mit Vererbung ergeben sich folgende Besonderheiten:
 
@@ -283,7 +283,7 @@ if (object.ReferenceEquals(str1, str2))
 { Console.WriteLine("str1 ist die selbe Instanz wie str2."); }
 ```
 
-## Für Profis: Konkrete Anwendung von is und as
+## Konkrete Anwendung von is und as
 
 Der folgende Code zeigt ein Anwendungsbeispiel aus der generischen Programmierung. Solcher Code
 kommt z. B. in JSON Serializern vor.
