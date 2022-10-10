@@ -208,7 +208,7 @@ persons.Remove(thirdPerson);
 Console.WriteLine($"Found {persons.Count} Persons");
 ```
 
-Dieses etwas seltsame verhalten wird schnell klarer, wenn wir uns den Speicher ansehen. Es wurde
+Dieses etwas seltsame Verhalten wird schnell klarer, wenn wir uns den Speicher ansehen. Es wurde
 4x mit *new* eine Person erzeugt. Dadurch sind 4 Instanzen im Heap. Die Referenzen darauf sehen
 so aus:
 
