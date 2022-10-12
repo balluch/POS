@@ -327,7 +327,7 @@ namespace InheritanceDemo.Application
                 Order order = new Order(paymentProvider: creditCard);
                 order.AddProduct(p1);
                 order.AddProduct(p2);
-                CheckAndWrite(() => order.InvoiceAmount == 3400, "InvoiveAmount ist 3400");
+                CheckAndWrite(() => order.InvoiceAmount == 3400, "InvoiceAmount ist 3400");
                 CheckAndWrite(() => order.Checkout() && order.Products.Count() == 0, "Checkout true und Produktliste leer");
             }
             {
@@ -380,7 +380,7 @@ Teste Klassenimplementierung.
    8 OK: Credit kann nicht öffentlich gesetzt werden
 Tests mit CreditCard als PaymentProdiver.
    9 OK: Limit ist 3500
-   10 OK: InvoiveAmount ist 3400
+   10 OK: InvoiceAmount ist 3400
    11 OK: Checkout true und Produktliste leer
 Teste Limit.
    12 OK: Checkout false wenn amount > limit
