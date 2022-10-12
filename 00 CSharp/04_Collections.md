@@ -410,10 +410,16 @@ namespace ExColletions
 s sitzt in der Klasse 3AHIF mit dem KV KV1.
 In der 3AHIF sind folgende Städte: ["CTY1","CTY2"].
 3AHIF vor ChangeKlasse:
-[{"City":"CTY1","Id":1001,"Lastname":"LN1","Firstname":"FN1"},{"City":"CTY1","Id":1002,"Lastname":"LN2","Firstname":"FN2"},{"City":"CTY2","Id":1003,"Lastname":"LN3","Firstname":"FN3"}]
+[{"Id":1001,"Lastname":"LN1","Firstname":"FN1","City":"CTY1"},
+ {"Id":1002,"Lastname":"LN2","Firstname":"FN2","City":"CTY1"},
+ {"Id":1003,"Lastname":"LN3","Firstname":"FN3","City":"CTY2"}]
 3AHIF nach ChangeKlasse:
-[{"City":"CTY1","Id":1002,"Lastname":"LN2","Firstname":"FN2"},{"City":"CTY2","Id":1003,"Lastname":"LN3","Firstname":"FN3"}]
+[{"Id":1002,"Lastname":"LN2","Firstname":"FN2","City":"CTY1"},
+ {"Id":1003,"Lastname":"LN3","Firstname":"FN3","City":"CTY2"}]
 3BHIF nach ChangeKlasse:
-[{"City":"CTY1","Id":1011,"Lastname":"LN4","Firstname":"FN4"},{"City":"CTY1","Id":1012,"Lastname":"LN5","Firstname":"FN5"},{"City":"CTY1","Id":1013,"Lastname":"LN6","Firstname":"FN6"},{"City":"CTY1","Id":1001,"Lastname":"LN1","Firstname":"FN1"}]
+[{"Id":1011,"Lastname":"LN4","Firstname":"FN4","City":"CTY1"},
+ {"Id":1012,"Lastname":"LN5","Firstname":"FN5","City":"CTY1"},
+ {"Id":1013,"Lastname":"LN6","Firstname":"FN6","City":"CTY1"},
+ {"Id":1001,"Lastname":"LN1","Firstname":"FN1","City":"CTY1"}]
 s sitzt in der Klasse 3BHIF mit dem KV KV2.
 ```
