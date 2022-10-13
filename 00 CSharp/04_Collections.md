@@ -247,7 +247,7 @@ durchlaufen werden. Es wird dann ein KeyValuePair zurückgegeben, welches den Ke
 das eigentliche Objekt im Property *Value* enthält.
 ```c#
 Person personB = personsDict["B"];
-foreach (KeyValuePair<string, Person> p in personsDict)  // kürzer: foreach (var p in personDict)
+foreach (KeyValuePair<string, Person> p in personsDict)  // kürzer: foreach (var p in personsDict)
 {
     Console.WriteLine($"Person {p.Key} hat den Zunamen {p.Value.Lastname}");
 }
@@ -255,7 +255,7 @@ foreach (KeyValuePair<string, Person> p in personsDict)  // kürzer: foreach (va
 
 Das Löschen von Elementen wird mit *Remove()* über den Key durchgeführt:
 ```c#
-personDict.Remove("A");
+personsDict.Remove("A");
 ```
 
 #### TryGetValue() und TryAdd()
@@ -265,8 +265,8 @@ Wird in einem Dictionary versucht, einen bestehenden Key hinzuzufügen, wird ein
 vorhandenen Index führt ebenso zu einer Exception.
 ```c#
 // ArgumentException: An item with the same key has already been added
-personDict.Add("D", new Person(id: 5, firstname: "FN5", lastname: "LN5"));
-Person notFound = personDict["Z"];
+personsDict.Add("D", new Person(id: 5, firstname: "FN5", lastname: "LN5"));
+Person notFound = personsDict["Z"];
 ```
 
 Daher gibt es bessere Methoden, um Daten zu suchen oder zu schreiben:
