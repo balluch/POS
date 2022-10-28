@@ -164,7 +164,7 @@ Dabei wird der Logger in der Klasse *MyTracker* als Property definiert und von a
 1. Implementiere die Klasse *ConsoleLogger*, die den übergebenen String in der *Log()* Methode einfach in
    der Konsole ausgibt.
 1. Implementieren die Klasse *FileLogger*, die den Übergeben String einfach in den beim Instanzieren gewählten
-   Dateinamen schreibt. Hinweis: Mit *System.IO.File.AppendAllText(pfad, inhalt)* kann Text zu einer Datei
+   Dateinamen schreibt. Hinweis: Mit *System.IO.File.AppendAllText(dateiname, inhalt)* kann Text zu einer Datei
    hinzugefügt werden.
 1. Ergänze das Property Logger in der Klasse *MyTracker* mit dem korrekten Datentyp.
 
