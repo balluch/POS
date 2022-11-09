@@ -206,7 +206,7 @@ class School
 	}
 ```  
 
-- **(1)** Die Liste für den SGA (Schulgemeinschaftsausschuss) ist private. *readonly* bedeudet,
+- **(1)** Die Liste für den SGA (Schulgemeinschaftsausschuss) ist private. *readonly* bedeutet,
           dass die Variable *_sga* nicht neu gesetzt werden kann. Es ist aber sehr wohl möglich,
 		  Add(), ... aufzurufen! In C# 9 kann new() verwendet werden, wenn der Typ auf der linken
 		  Seite definiert wurde. Es wird dann *new List<Person>()* vom Compiler angenommen.
