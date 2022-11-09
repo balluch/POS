@@ -49,7 +49,7 @@ class AppleLocationProvider : ILocationProvider
             _currentPoint = new Point(rnd.NextDouble() * 180 - 90, rnd.NextDouble() * 360);
         }
         // Die Nullable analyse schlägt hier fehl. Wenn noch nie gemessen wurde, ist LastMeasurement
-        // der 1.1.0001 und daher wird sicher ein Wer generiert. Mit NULL forgiving (!) sagen
+        // der 1.1.0001 und daher wird sicher ein Wert generiert. Mit NULL forgiving (!) sagen
         // wir, dass wir es besser wissen.
         return _currentPoint!;
     }
