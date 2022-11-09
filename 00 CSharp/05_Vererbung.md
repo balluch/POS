@@ -321,7 +321,7 @@ namespace InheritanceDemo.Application
             Product p2 = new Product("1002", "Samsung Galaxy Z Fold 3 5G F926B/DS 512GB Phantom Black", 1600);
 
             {
-                Console.WriteLine("Tests mit CreditCard als PaymentProdiver.");
+                Console.WriteLine("Tests mit CreditCard als PaymentProvider.");
                 CreditCard creditCard = new CreditCard(limit: 3500, number: "123456789");
                 CheckAndWrite(() => creditCard.Limit == 3500, "Limit ist 3500");
                 Order order = new Order(paymentProvider: creditCard);
@@ -339,7 +339,7 @@ namespace InheritanceDemo.Application
             }
 
             {
-                Console.WriteLine("Tests mit PrepaidCard als PaymentProdiver.");
+                Console.WriteLine("Tests mit PrepaidCard als PaymentProvider.");
                 PrepaidCard prepaidCard = new PrepaidCard(limit: 2000, credit: 1000);
                 Order order = new Order(paymentProvider: prepaidCard);
                 order.AddProduct(p1);
@@ -378,13 +378,13 @@ Teste Klassenimplementierung.
    6 OK: PaymentProvider ist abstrakt
    7 OK: Order.Products ist IReadOnlyList<Product>
    8 OK: Credit kann nicht öffentlich gesetzt werden
-Tests mit CreditCard als PaymentProdiver.
+Tests mit CreditCard als PaymentProvider.
    9 OK: Limit ist 3500
    10 OK: InvoiceAmount ist 3400
    11 OK: Checkout true und Produktliste leer
 Teste Limit.
    12 OK: Checkout false wenn amount > limit
-Tests mit PrepaidCard als PaymentProdiver.
+Tests mit PrepaidCard als PaymentProvider.
    13 OK: Checkout false wenn credit < amount
    14 OK: Checkout true und Produktliste leer
    15 OK: Credit = 100
