@@ -30,7 +30,7 @@ namespace DbDemo
             {
                 // Wir casten auf "gut Glück", denn alles ist ein object.
                 long id = (long)reader["P_ID"];
-                string lastname = reader["P_Lastname"] == DBNull.Value ? null : (string)reader["P_Lastname"];
+                string? lastname = reader["P_Lastname"] == DBNull.Value ? null : (string)reader["P_Lastname"];
                 Console.WriteLine($"{id}: {lastname}");
             }
 
