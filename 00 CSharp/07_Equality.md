@@ -248,7 +248,7 @@ pe2.Nr = 1;                        // Nachträgliche Änderung von pe2.
 
 ## Records in C# 9
 
-Die Klasse *Position* hat 2 Eigenschaften, die oft benötigt werden:
+Die Klasse *Position* hat Eigenschaften, die oft benötigt werden:
 - Alle Properties sind read-only.
 - Sie besitzt einen Konstruktor mit allen Properties zur Zuweisung der Werte.
 - Sie überschreibt Equals() so, dass 2 Instanzen gleich sind, wenn alle Properties gleich sind.
