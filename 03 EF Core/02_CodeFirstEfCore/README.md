@@ -273,7 +273,7 @@ public class Offer
 
 Zum Abschluss müssen wir noch eine Besonderheit von EF Core berücksichtigen. EF Core versucht
 beim Lesen eines Datensatzes eine Instanz der entsprechenden Klasse zu erzeugen. Dafür braucht es
-aber einen Default Kontruktor. Diese Default Konstruktoren wollen wir allerdings vermeiden. Ein
+aber einen Default Konstruktor. Diese Default Konstruktoren wollen wir allerdings vermeiden. Ein
 guter Weg ist das Anlegen dieses Konstruktors als private oder protected Konstruktor. Damit kann
 niemand mit *new Store()* ein uninitialisiertes Store Objekt anlegen. Wir verwenden protected,
 da wir im nächsten Kapitel auch Vererbung verwenden wollen.
