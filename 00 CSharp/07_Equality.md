@@ -227,7 +227,7 @@ Wir betrachten diese technisch vollkommen korrekte Implementierung von *Equals()
 class Person : IEquatable<Person>
 {
     public int Nr { get; set; }
-    public string Zunamne { get; set; } = string.Empty;
+    public string Zuname { get; set; } = string.Empty;
     public string Vorname { get; set; } = string.Empty;
 
     public bool Equals(Person? other) => Nr.Equals(other?.Nr);
