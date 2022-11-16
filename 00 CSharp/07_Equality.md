@@ -312,8 +312,8 @@ Equals muss natürlich nicht mehr überschrieben werden, nur *IComparable*
 class PhoneNr : IEquatable<PhoneNr>, IComparable<PhoneNr>, IComparable
 {
     public long Vorwahl { get; }
-    public long Telefonummer { get; }
-    public override string ToString() => $"0{Vorwahl}/{Telefonummer}";
+    public long Telefonnummer { get; }
+    public override string ToString() => $"0{Vorwahl}/{Telefonnummer}";
 }
 
 
