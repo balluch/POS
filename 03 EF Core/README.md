@@ -10,6 +10,7 @@
 ### Musterprogramme
 
 - [Demoprogramm zu Code First](CodeFirstDemo)
+- [Demoprogramm zu Rich Domain Models](RichDomainModelDemo)
 
 ## Tools zum Betrachten der Datenbanken
 
