@@ -51,7 +51,7 @@ Option *TreatWarningsAsErrors* ein.
 	</PropertyGroup>
 ```
 
-**Im Ordner [CodeFirstDemo](../CodeFirstDemo) des Kapitels *01 EF Core* befindet sich eine fertige
+**Im Ordner [CodeFirstDemo](../CodeFirstDemo) des Kapitels *03 EF Core* befindet sich eine fertige
 Applikation, die eine fertige Implementierung beinhaltet.**
 
 ### Nullable reference types und EF Core
@@ -398,7 +398,7 @@ von Autoincrement Werten und die Definition der SQL Datentypen.
 
 Klicken wir mit der rechten Maustaste in Visual Studio auf die Testmethode *CreateDatabaseTest*
 finden wir im Kontextmenü den Punkt *Run Tests*. Nach erfolgreicher Ausführung erscheint ein
-grünes Häkchen. Im Text Explorer (Menü *Test* - *Test Explorer*) ist der Test ebenfalls
+grünes Häkchen. Im Test Explorer (Menü *Test* - *Test Explorer*) ist der Test ebenfalls
 aufgelistet.
 
 ### Nutzen einer in-memory SQLite Datenbank

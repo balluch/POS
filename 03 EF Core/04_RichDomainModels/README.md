@@ -212,7 +212,8 @@ public class StoreContext : DbContext
 ### Value objects
 
 Im ER Diagramm fällt bei den Tabellen *Order* und *Customer* auf, dass die
-Properties der Adressklasse in die Tabelle integriert wurden. Das Namensschema ist
+Properties der Adressklasse in die Tabelle integriert wurden (siehe Punkt (2) 
+im ER Diagramm). Das Namensschema ist
 *Property Name des Value Objects + Property Name im Value Object*. Dadurch muss
 die Datenbank keine JOIN Operation durchführen, wenn die Adresse eines Kunden
 gelesen wird.
@@ -368,7 +369,7 @@ public class Order
 
 Erweitere das Übungsmodell über die Abgabenverwaltung aus den vorigen Kapiteln.
 - Der Name wird als value object definiert. Verwende C# 9 Records zur Definition
-  des Objektes. Achte auf die korrekte Konfuration im Context mittels *OwnsOne()*.
+  des Objektes. Achte auf die korrekte Konfiguration im Context mittels *OwnsOne()*.
 - In der Klasse *Team* liefert die Methode *GetActiveTasks()* alle Tasks zurück, wo das
   *ExpirationDate* größer als das übergebene Datum ist.
 - Task ist ein Aggregate für die Abgaben (hand ins).
