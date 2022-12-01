@@ -5,14 +5,6 @@
 https://www.plantuml.com/plantuml/uml/XPBRIiD048RlzocMN2asnTu6jGKjAdWer3x0cjqc2ti8Uq2AzDsTpIGrna1xqNI-sVtdcvAL3yo5g1Mf9HTKw2OSg1QXjjoJKZ7lwJPO9-WteV2vUkQqeD84h1wZJ7Lw87XZMW3mmKbJ8NfbXbN20TrvuPOjpFCScqtyLBB44HTuYnh8cE5XghlBjzH4fIx9aQ1Ks_vr6YYbXlbliMKg_2KRYFcoZZynNuyEuyO5QaqAfoczRyI9uDm13xDEHJCOCyD4wjDtkmpMsIAxoVExx7e-NsHjTh_c-tultFH_lt6Mnp80wdvDkkD9MIR4HIarKmXVc0-xXhEGEW_m-91Q92KSQS47CuQWduHsVNaFjolh3XEUKwy4ehKvmIKvZXBxf3KpPwB62iLO2h8xWYkCsojXUDJg1m00
 </sup>
 
-## Collection Navigations
-
-Im Klassenmodell hat der Pfeil zwischen *Product* und *Offer* zwei Pfeilspitzen. An einem Ende
-kann von der Klasse *Offer* über das Property *Product* zum Produkt navigiert werden. In der
-Klasse *Product* ist auch eine besondere Navigation vom Typ *ICollection\<Offer\>* vorhanden.
-EF Core unterstützt auch diese Art der Navigation. In *Offers* werden automatisch alle
-Angebote zum aktuellen Produkt abgerufen. Das macht LINQ Abfragen besonders einfach.
-
 ## Festlegen der Tabellennamen
 
 Die Tabellennamen werden durch den Namen des Properties in der Kontextklasse bestimmt.
@@ -87,14 +79,14 @@ Oftmals wird die Annotation *Column* zur Definition des SQL Datentyps verwendet:
 public class Store
 {
     /* ... */
-    [Column(TypeName = "VARCHAR(255")]
+    [Column(TypeName = "VARCHAR(255)")]
     public string Name { get; set; }
 }
 
 public class Offer
 {
      /* ... */
-    [Column(TypeName = "DECIMAL(9,4")]
+    [Column(TypeName = "DECIMAL(9,4)")]
     public decimal Price { get; set; }
 }
 ```
