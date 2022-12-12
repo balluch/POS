@@ -41,7 +41,8 @@ Dieses Rich Domain Model bietet durch die Verwendung von Methoden viele Vorteile
 - **ConfirmOrder()** berechnet die ShippingCost und das ShippingDate aufgrund der
   Daten im Customer. Diese Methode ist daher in dieser Klasse viel besser aufgehoben als
   in einer darüberliegenden Schicht.
-- **PlaceOrder()** fügt eine Bestellung in die Liste *Orders* ein und kann Prüfungen durchführen.
+- **PlaceOrder()** fügt eine Bestellung in die Liste *Orders* ein und kann Prüfungen durchführen. 
+  (In der RichDomainModelDemo heißt diese Methode **AddOrder()**.)
 - **AddOrderItem()** prüft, ob das Angebot schon in den OrderItems enthalten ist. Wenn ja,
   wird die Anzahl einfach erhöht statt ein neues OrderItem anzulegen.
 - **CalculateAveragePrice()** kann aufgrund der Liste der Offers berechnen, zu welchem
