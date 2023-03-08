@@ -75,7 +75,7 @@ namespace StoreManager.Application.Infrastructure
                     lastUpdate: lastUpdate);
             })
             .Generate(500)
-            .GroupBy(o => new { o.StoreId, o.ProductEan }).Select(g => g.First())
+            .GroupBy(o => new { o.Store.Id, o.Product.Ean }).Select(g => g.First())
             .ToList();
             Offers.AddRange(offers);
             SaveChanges();
