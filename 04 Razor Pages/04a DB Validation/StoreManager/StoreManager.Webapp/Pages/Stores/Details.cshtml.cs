@@ -28,7 +28,6 @@ namespace StoreManager.Webapp.Pages.Stores
         [FromRoute]
         public Guid Guid { get; set; }
 
-        [BindProperty]
         public OfferDto NewOffer { get; set; } = default!;
         public Store Store { get; private set; } = default!;
         public IReadOnlyList<Offer> Offers { get; private set; } = new List<Offer>();
@@ -39,10 +38,9 @@ namespace StoreManager.Webapp.Pages.Stores
         public IEnumerable<SelectListItem> ProductSelectList =>
             _db.Products.OrderBy(p => p.Name).Select(p => new SelectListItem(p.Name, p.Guid.ToString()));
 
-        [BindProperty]
         public DiscountDto NewDiscount { get; set; } = default!;
 
-        public IActionResult OnPostNewOffer(Guid guid)
+        public IActionResult OnPostNewOffer(Guid guid, OfferDto newOffer)
         {
             ModelState.Remove("ProductGuid");
             if (!ModelState.IsValid)
@@ -51,8 +49,8 @@ namespace StoreManager.Webapp.Pages.Stores
             }
             try
             {
-                var offer = _mapper.Map<Offer>(NewOffer);
-                offer.Product = _db.Products.FirstOrDefault(p => p.Guid == NewOffer.ProductGuid)
+                var offer = _mapper.Map<Offer>(newOffer);
+                offer.Product = _db.Products.FirstOrDefault(p => p.Guid == newOffer.ProductGuid)
                     ?? throw new ApplicationException("Ungültiges Produkt.");
                 offer.Store = _db.Stores.FirstOrDefault(s => s.Guid == guid)
                     ?? throw new ApplicationException("Ungültiger Store.");
@@ -73,7 +71,7 @@ namespace StoreManager.Webapp.Pages.Stores
             return RedirectToPage();
         }
 
-        public IActionResult OnPostNewDiscount(Guid guid)
+        public IActionResult OnPostNewDiscount(Guid guid, DiscountDto newDiscount)
         {
             if (!ModelState.IsValid)
             {
@@ -81,12 +79,12 @@ namespace StoreManager.Webapp.Pages.Stores
             }
             try
             {
-                var discount = _db.Discounts.FirstOrDefault(d => d.Product.Guid == NewDiscount.ProductGuid && d.Allowed) 
+                var discount = _db.Discounts.FirstOrDefault(d => d.Product.Guid == newDiscount.ProductGuid && d.Allowed) 
                     ?? throw new ApplicationException("Ungültiger Rabatt.");
                 discount.Count++;
-                var offer = _db.Offers.FirstOrDefault(o => o.Product.Guid == NewDiscount.ProductGuid && o.Store.Guid == guid) 
+                var offer = _db.Offers.FirstOrDefault(o => o.Product.Guid == newDiscount.ProductGuid && o.Store.Guid == guid) 
                     ?? throw new ApplicationException("Ungültiger Store.");
-                offer.Price -= NewDiscount.Discount;
+                offer.Price -= newDiscount.Discount;
                 offer.LastUpdate = DateTime.Now;
                 _db.SaveChanges();
             }
