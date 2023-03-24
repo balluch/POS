@@ -38,7 +38,7 @@ namespace StoreManager.Application.Dto
             var db = validationContext.GetService(typeof(StoreContext)) as StoreContext;
 
             var maxValue = db?.Discounts.FirstOrDefault(d => d.Product.Guid == discountDto.ProductGuid && d.Allowed)?.MaxValue;
-            if (discountDto.Discount < 0 || discountDto.Discount > maxValue)
+            if (maxValue is not null && (discountDto.Discount < 0 || discountDto.Discount > maxValue))
                 return new ValidationResult($"Der Rabatt muss zwischen 0 und {maxValue} liegen.");
 
             return ValidationResult.Success;
