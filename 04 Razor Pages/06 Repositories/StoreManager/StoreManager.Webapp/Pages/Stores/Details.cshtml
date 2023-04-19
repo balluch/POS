@@ -37,7 +37,6 @@
                 <th>Sold out</th>
                 <th>Last Update</th>
                 <th>Action</th>
-                <th>Löschen?</th>
             </tr>
         </thead>
         <tbody>
@@ -65,14 +64,8 @@
                             Save
                         </button>
                     </td>
-                    <td>
-                        <input class="form-check-input" asp-for="OffersToDelete[o.Guid]" />
-                    </td>
                 </tr>
             }
         </tbody>
     </table>
-    <button 
-        type="submit" class="btn btn-danger" 
-        asp-page-handler="Delete">Ausgewählte löschen</button>
 </form>
