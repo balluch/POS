@@ -14,7 +14,7 @@ Schule eine Lizenz von Visual Studio Enterprise zur Verfügung.
 
 ![](vs_workloads_2.png)
 
-### PlantUML und VS Code als Modellierungswerkzeug
+### PlantUML und VS Code als Modellierungswerkzeug (optional)
 
 In der Konzeptionierungsphase ist ein grafisches Tool zum Erzeugen von Klassenmodellen sehr wichtig.
 In diesen Kurs werden immer wieder UML Klassendiagramme hergezeigt. Sie können mit VS Code und
