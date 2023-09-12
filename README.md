@@ -14,6 +14,16 @@ Schule eine Lizenz von Visual Studio Enterprise zur Verfügung.
 
 ![](vs_workloads_2.png)
 
+### Alternativ: Verwenden von JetBrains Rider
+
+Eine andere weit verbreitete Entwicklungsumgebung - gerade unter macOS - ist Rider von JetBrains.
+Ab der Version 2021.3 unterstützt Rider auch .NET 6.
+Wer mit IntelliJ gut arbeiten konnte, kann auch mit der Schullizenz Rider beziehen. Logge dich dafür
+auf https://account.jetbrains.com/login ein. Wer noch keinen Zugang hat, kann mit der Schul Mailadresse
+eine Lizenz gratis beziehen. Nach dem Login steht Rider als Download zur Verfügung.
+
+![](resharper_download_4.png)
+
 ### PlantUML und VS Code als Modellierungswerkzeug (optional)
 
 In der Konzeptionierungsphase ist ein grafisches Tool zum Erzeugen von Klassenmodellen sehr wichtig.
