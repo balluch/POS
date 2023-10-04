@@ -305,7 +305,7 @@ der Contains Methode verwendet, da es eine binäre Suche bietet.
 if (teacherHashSet.Contains("SZ")) { ... }
 ```
 
-## Übung
+## Übung 1
 
 Erstelle ein Projekt mit dem Namen *CollectionDemo* wie oben beschrieben. Ersetze danach den Inhalt
 von Program.cs durch die untenstehende Version. Vervollständige die 2 Klassen 
