@@ -211,5 +211,5 @@ Order order = new Order();
 Product product = new Product(ean: "1001");
 order.AddProduct(product);
 order.Products.Remove(product);  // Compilerfehler: IReadOnlyList definiert kein Remove.
-Product product2 = order.ElementAt(0);  // OK
+Product product2 = order.Products.ElementAt(0);  // OK
 ```
