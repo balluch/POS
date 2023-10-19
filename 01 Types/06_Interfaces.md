@@ -198,7 +198,7 @@ https://www.plantuml.com/plantuml/uml/XP31IWCn48RlUOgXfoubnRDAQH4HGQZKVO6Op6fmab
 </sup>
 
 Durch den Typecast regeln wir also die Funktionalität, die nach außen gegeben wird. Da die Liste
-das Interface *IReadOnlyList&lt;Product&gt;* definiert, ist ein impliziter Typecast möglich.
+das Interface *IReadOnlyList&lt;Product&gt;* implementiert, ist ein impliziter Typecast möglich.
 ```c#
 class Product { /* ... */ }
 class Order
