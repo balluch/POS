@@ -86,7 +86,7 @@ PaymentProvider bietet. Wie sie konkret implementiert ist, kann uns egal sein.
 Solange die Methode einen bool Wert zurückgibt und einen Parameter (Rechnungsbetrag) benötigt,
 können wir sie auch ohne konkrete Implementierung nutzen.
 
-Wir fordern aber im Konstruktor eine konkrete Implementierung (also eine Instanz)
+Wir fordern aber im Konstruktor der Klasse Order eine konkrete Implementierung (also eine Instanz)
 von PaymentProvider an. Eigentlich ist das nicht nötig. Daher können wir ein Interface
 *IPaymentProvider* implementieren:
 
