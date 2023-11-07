@@ -252,10 +252,10 @@ Erstelle wie oben beschrieben die Solution *LambdaDemo*. Erstelle danach eine le
 Code von unten.
 
 1. Die Klasse *LambdaTest* besitzt verschiedene Methoden, die eines gemeinsam haben: sie bekommen eine Methode 
-als Parameter übergeben. Der Typ des Parameters ist mit ??? gekennzeichnet, er muss von dir korrekt 
+als Parameter übergeben. Der Typ des Parameters ist mit ??? gekennzeichnet und muss korrekt 
 gesetzt werden. Das Programm muss danach fehlerfrei kompiliert werden können.
-2. Wenn das Programm korrekt kompiliert ersetze die "langwierig" auscodierten Methoden der Programmklasse
-durch Lambdas, die du direkt als Parameter statt den ursprünglichen Methoden übergibst.
+2. Wenn das Programm korrekt kompiliert, sind die "langwierig" auscodierten Methoden der Programmklasse
+durch Lambdas zu ersetzen, die direkt als Parameter statt den ursprünglichen Methoden übergeben werden.
 
 
 ### Klasse LambdaTest
