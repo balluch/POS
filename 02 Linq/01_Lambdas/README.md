@@ -195,7 +195,7 @@ müssen daher immer zwischen der Deklaration und dem tatsächlichen Ausführen v
 
 Nun können wir die Methode Filter() in der Klasse PupilList so allgemein definieren, dass sie
 jede Art von Filterung unterstützt. Der Parameter predicate ist eine Function, die ein Pupil
-Objekt auf einen bool Wert (nehmen oder nicht nehmen) abbildet.
+Objekt auf einen bool Wert abbildet.
 
 ```c#
 class PupilList : List<Pupil>
