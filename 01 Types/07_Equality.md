@@ -2,7 +2,7 @@
 Vererbung wird hauptsächlich dazu verwendet, um ein bestehendes Framework (in unserem Fall das .NET
 Framework) zu erweitern. Oft werden Interfaces, die bereitgestellt werden, in eigenen Klassen implementiert.
 
-Wir implementieren in diesem Beispiel 2 bekannte Interfaces: *IEquatable&lt;T&gt;* und *IComparable&lt;T&gt;*. Diese
+Wir implementieren in diesem Beispiel zwei bekannte Interfaces: *IEquatable&lt;T&gt;* und *IComparable&lt;T&gt;*. Diese
 Interfaces sind generisch, die bei der Vererbung für einen Typ spezifiziert werden. Diese Technik wird
 uns bei der Vererbung noch oft begegnen. In unserem Musterbeispiel implementieren wir die Klasse Position,
 die den Längen- und Breitengrad eines Punktes speichert:
@@ -129,7 +129,7 @@ zusätzlich das Interface *IEquatable&lt;T&gt;*. Diese Implementierungen müssen
 Dies lässt sich am Leichtesten so erreichen, dass *object.Equals()* die spezifischere *Equals()* Methode aufruft.
 
 Es ist darauf zu achten, dass die Methode keine Exception verursacht. Wird null übergeben, so soll diese
-Methode einfach *false* liefern. Der *?.* Operator hilft uns hierbei.
+Methode einfach *false* liefern. Der *?* Operator hilft uns hierbei.
 ```c#
 public bool Equals(Position? other) => Lat.Equals(other?.Lat) && Lng.Equals(other?.Lng);
 public override bool Equals(object? obj) => Equals(obj as Position);
