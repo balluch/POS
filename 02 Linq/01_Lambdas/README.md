@@ -136,7 +136,7 @@ param1 => statement
 
 | Langform                                                                   |  Lambda                                                         |
 | -------------------------------------------------------------------------- | --------------------------------------------------------------- |
-| `bool func1() { return true; }`                                             | `()     => true`  oder `() => { return true; }`                 |
+| `bool func1() { return true; }`                                             | `() => true`  oder `() => { return true; }`                 |
 | `int func2(int x) { return x + 1; }`                                        | `x => x + 1` oder seltener:  `x => { return x + 1; }` bzw. `(x) => x + 1` |
 | `bool func3(int x, int y) { return x == y; }`                               | `(x, y) => x == y` oder  `(x, y) => { return x == y; }`         |
 
