@@ -103,14 +103,14 @@ IEnumerable<Student> negative2b = db.Students
       .Where(s => s.Exams.Any() && s.Exams.All(e => e.Grade == 5));
 ```
 
-7. Liefert eine Liste aller Schüler, die eine negative D Prüfung hatten.
+7. Liefere eine Liste aller Schüler, die eine negative D Prüfung hatten.
 ```c#
 IEnumerable<Student> negative3 = db.Students
       .Where(s => s.Exams.Any(e => e.Grade == 5 && e.Subject == "D"));
 ```
 
 8. Besonderheit: All liefert true, wenn die Ausgangsliste leer ist. Beispiel: Sind alle GGP Prüfungen 
-eines Schülers negativ? Man muss wissen, dass es keine GGPB Prüfungen in den Testdaten gibt. Deswegen 
+eines Schülers negativ? Man muss wissen, dass es keine GGP Prüfungen in den Testdaten gibt. Deswegen 
 werden alle Schüler geliefert!
 ```c#
 IEnumerable<Student> negative4 = db.Students
