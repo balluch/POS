@@ -99,7 +99,7 @@ namespace LinqUebung1.Application
             //     nicht zusammengesetzt schreiben kann.
             // Schreibe das Ergebnis mit dem richtigen Datentyp in die Variable result9 (kein var verwenden!).
             object result9 = null!;
-            CheckJsonAndWrite(result9, results.GetProperty("Result9"), "Beispiel 9");
+            CheckJsonAndWrite(result9, results.GetProperty("Result9a"), results.GetProperty("Result9b"), "Beispiel 9");
 
             // 10. Welche Schüler haben im Mittel bessere DBI Prüfungen als D Prüfungen. Anders gesagt: Bei wem
             //     ist der Notenschnitt der DBI Prüfungen kleiner als der Notenschnitt der D Prüfungen.

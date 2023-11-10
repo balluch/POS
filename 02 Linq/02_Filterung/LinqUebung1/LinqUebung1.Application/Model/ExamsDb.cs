@@ -103,7 +103,7 @@ namespace LinqUebung1.Application.Model
                 new Exam(subject:"DBI", examinator: "FZ", grade: 5, date: new DateTime(2018, 5, 3), student: students[20]),
                 new Exam(subject:"D", examinator: "NAI", grade: 3, date: new DateTime(2018, 1, 13), student: students[22]),
                 new Exam(subject:"DBI", examinator: "FZ", grade: 1, date: new DateTime(2018, 5, 22), student: students[22]),
-                new Exam(subject:"E", examinator: "FAV", grade: 4, date: new DateTime(2017, 11, 11), student: students[23]),
+                new Exam(subject:"E", examinator: "KY", grade: 5, date: new DateTime(2017, 11, 11), student: students[23]),
                 new Exam(subject:"POS", examinator: "SZ", grade: 2, date: new DateTime(2017, 9, 12), student: students[23]),
                 new Exam(subject:"POS", examinator: "SZ", grade: 3, date: new DateTime(2017, 12, 4), student: students[23]),
                 new Exam(subject:"AM", examinator: "KY", grade: 1, date: new DateTime(2018, 1, 12), student: students[24]),

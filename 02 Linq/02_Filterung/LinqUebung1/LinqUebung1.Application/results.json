@@ -273,7 +273,16 @@
       "Date": "2018-06-18T00:00:00"
     }
   ],
-  "Result9": [
+  "Result9a": [
+    {
+      "Id": 1023,
+      "Lastname": "Dixon",
+      "Firstname": "Personnalis\u00E9e",
+      "Gender": 2,
+      "Schoolclass": "3BHIF"
+    }
+  ],
+  "Result9b": [
     {
       "Id": 1000,
       "Lastname": "Elt",
@@ -371,6 +380,13 @@
       "Firstname": "Styrbj\u00F6rn",
       "Gender": 2,
       "Schoolclass": "3CHIF"
+    },
+    {
+      "Id": 1023,
+      "Lastname": "Dixon",
+      "Firstname": "Personnalis\u00E9e",
+      "Gender": 2,
+      "Schoolclass": "3BHIF"
     },
     {
       "Id": 1026,

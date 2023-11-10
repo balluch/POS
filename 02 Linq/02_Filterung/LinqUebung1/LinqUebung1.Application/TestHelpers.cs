@@ -143,6 +143,31 @@ namespace TestHelpers
             }
         }
 
+        public static void CheckJsonAndWrite(object? obj1, JsonElement element1, JsonElement element2, string message, int weight = 1)
+        {
+            if (obj1 is null)
+            {
+                CheckAndWrite(() => false, message, weight);
+                return;
+            }
+            _testCount++;
+            _pointsMax += weight;
+            if (obj1.JsonEquals(element1) || obj1.JsonEquals(element2))
+            {
+                Console.WriteLine($"   ({_testCount}) OK: {message}");
+                _testsSucceeded++;
+                _points += weight;
+                return;
+            }
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine($"   ({_testCount}) Nicht erfüllt: {message}");
+            Console.Write("   Geliefertes Ergebnis: ");
+            obj1.WriteJson(string.Empty, true);
+            Console.Write("   Korrektes Ergebnis: ");
+            Console.WriteLine(element1);
+            Console.ResetColor();
+        }
+		
         public static void WriteSummary()
         {
             Console.WriteLine();
