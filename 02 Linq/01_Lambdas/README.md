@@ -235,7 +235,7 @@ record Pupil(int Id, string Firstname, string Lastname, string SchoolClass, Date
     public bool IsFullAge => DateOfBirth <= DateTime.Now.Date.AddYears(-18);
 }
 
-PupilList fullAged = pupils.Filter(Pupil.IsFullAgePredicate);
+PupilList fullAged1 = pupils.Filter(Pupil.IsFullAgePredicate);
 PupilList fullAged2 = pupils.Filter(p => p.IsFullAge);
 ```
 
