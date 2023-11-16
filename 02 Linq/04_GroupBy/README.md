@@ -57,7 +57,7 @@ aus:
 ![](https://www.plantuml.com/plantuml/svg/pLHDgzim4BpxLoovblo14DoKV40XXD2ajrvKUnkhM5AGrj1Gtdz_LhmHLkGOmxiydxmpksXcLcZbI5XgL9rLiaH0TQKRAAJAb2whyGy16R3oKX6Kqc91qkWiAshX71pHIbF2VyYW_Rx0mS82f2OkTzQe5jW8mhDKoEZPfDWUdJFQjSHUEbfsPSxazfzGWV95dhqz59nH51LQ21A-bssd8olrXP6zSAI5mcTy9-qmiLL2ri_Wjw8mZQO0Jn5-AYfZwhjG32qzSDmWE-prZxdSu5LOKfXANFjHpYcQIzYMuxyfxexDLTQ1krVZXXwdBEVpFBArWDaIrlrz_j9vdDwCu-XEVGf2Qfg-w_6rffjB8ukazojlijCtQ94JYxq5PnpsIsi_DKaNi8_8z3JtlBmMhsx4gVdz5uiahn_6g81zPN0ZRdsr_5eSx0082_xn4N8GmnbsP19YDCIIam76e-OW8EvbE2p7N-9aDPzk3VvLJHxNIRbxq6T_zsa6a_TKaZiF9AbpSq13Ovnuw0jvhr2NZQhV0G00)
 <sup>[PlantUML Source](https://www.plantuml.com/plantuml/uml/pLH1QiCm4Bpx5IBNaW-KuAOq2HH224rwwqMrjx6A9GLf3GsbVwyLhrrBSaneB_N9ExEBPcQ5vXQvmKgMII5oO22FU68IiD2vJKfuGuQQ6N4eaEN2G8P2goJ9Icujsu8HEcUVB67rTyCsXjqoeP3AbT6o1XOSOIya4BhNCRO6QxMoDR4M5cTDcHAv_E2oeroH9b-jWZtmh03p8-4nhpij6g4EXAovHSKbXFXAc65YARaeG_0-otIbC8H7XU-oGkloB1IwbXuuRf0Szlh7N2xWo0rAY2K-k57AAPppsPgZlslSRQkZA3lkN8qRQa-PJQTfpvPhdCmQ8UtvBohrqvjG7CsfGH12uMzt7Qyrt5mScIUzNpcJZRv1YvHOuArrHc5VjFQiKDWM-vDCHrFFnMjnwKRigjTtoAAydhIM7NP7u8AV-chfjTYO0R26cXyN8GKnd653HY5wGoGv6Y3SRoO1GI_1tNBS9VPNyn_Nu5vLxt6zEdS7kkpFFlLWyewASgS1BtMlcT2sCKpSeNxUoHnKNido6m00)</sup>
 
-Über die Klasse *[ExamsDb](Grouping.Application/Model/ExamsDb.cs)* kann auf die einzelnen
+Über die Klasse *[ExamsDb](GroupingUebung/Grouping.Application/Model/ExamsDb.cs)* kann auf die einzelnen
 Collections (und somit auf die Datenbanktabelle) zugegriffen werden.
 
 ```c#
@@ -162,7 +162,7 @@ var teachersUniqueMail = db.Teachers
 
 ## Übungen
 
-Öffne die Datei [Grouping.sln](Grouping.sln) und schreibe deine Abfragen
+Öffne die Solution [Grouping.sln](GroupingUebung) und schreibe deine Abfragen
 statt `List<object> result = null!`
 in die Variablen. Verwende *var*, damit der Compiler den anonymen Typen speichern kann.
 Die korrekten Ausgaben sind folgende:
