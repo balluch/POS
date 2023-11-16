@@ -35,21 +35,22 @@ namespace Grouping
                     {
                         g.Key.TeacherId,
                         g.Key.Lastname,
-                        ExamsCount = g.Count()
+                        ExamsCount = g.Count(),
+                        ExamDates = g.Select(x => x.Date.ToShortDateString())
                     })
                     .OrderBy(e => e.TeacherId)
                     .Take(3)
                     .ToList();
-                Console.WriteLine("MUSTER: Anzahl der Prüfungen pro Lehrer (erste 3 Lehrer).");
+                Console.WriteLine("MUSTER: Anzahl der Prüfungen und Datumsangaben zu den Prüfungen pro Lehrer (erste 3 Lehrer).");
                 WriteJson(result);
             }
 
             // *************************************************************************************
-            // ÜBUNG 1: Erstelle für jeden Lehrer eine Liste der Fächer, die er unterrichtet. Es
-            // sind nur die ersten 10 Datensätze auszugeben. Das kann mit
-            // .OrderBy(t=>t.TeacherId).Take(10)
-            // am Ende der LINQ Anweisung gemacht werden. Hinweis: Verwende Distinct für die
-            // liste der Unterrichtsgegenstände.
+            // ÜBUNG 1: Wie viele Klassen gibt es pro Abteilung?
+            //          Das Ergebnis ist absteigend nach der Anzahl der Klassen zu sortieren.
+            //          Bei gleicher Klassenanzahl ist zusätzlich nach dem Abteilungsnamen
+            //          aufsteigend zu sortieren. Verwende dafür OrderByDescending() und ThenBy()
+            //          mit den entsprechenden Lambda Expressions.
             // *************************************************************************************
             {
                 List<object> result = null!;
@@ -58,11 +59,12 @@ namespace Grouping
             }
 
             // *************************************************************************************
-            // ÜBUNG 2: Die 5AHIF möchte wissen, in welchem Monat sie welche Tests hat.
-            //          Hinweis: Mit den Properties Month und Year kann auf das Monat bzw. Jahr
-            //          eines DateTime Wertes zugegriffen werden. Die Ausgabe in DisplayMonth kann
-            //          $"{mydate.Year:00}-{mydate.Month:00}" (mydate ist zu ersetzen)
-            //          erzeugt werden
+            // ÜBUNG 2: Wie die vorige Übung, allerdings sind nur Abteilungen
+            //          mit mehr als 10 Klassen auszugeben.
+            //          Das Ergebnis ist absteigend nach der Anzahl der Klassen zu sortieren.
+            //          Verwende dafür OrderByDescending() mit der entsprechenden Lambda Expression.
+            //          Hinweis: Filtere mit Where nach dem Erstellen der Objekte mit Department
+            //                   und Count.
             // *************************************************************************************
             {
                 List<object> result = null!;
@@ -71,24 +73,8 @@ namespace Grouping
             }
 
             // *************************************************************************************
-            // ÜBUNG 3: Jeder Schüler der 5AHIF soll eine Übersicht bekommen, welche Tests er pro Fach
-            //          abgeschlossen hat.
-            //          Es sind nur die ersten 2 Schüler mit OrderBy(p => p.Id).Take(2) am Ende des
-            //          Statements auszugeben.
-            //          Hinweis: Beachte die Datenstruktur in der Ausgabe.
-            //   Pupil                           <-- Zuerst wird der Schüler projiziert (Select)
-            //     |
-            //     +-- Id
-            //         Firstname
-            //         Lastname
-            //         Exams                     <-- Hier soll nach Subject gruppiert werden
-            //           |
-            //           +---- Subject           <-- Key der Gruppierung
-            //           +---- SubjectExams      <-- Projektion der Gruppierung
-            //                    |    
-            //                    +------ Teacher
-            //                    +------ Date
-            //                    +------ Lesson
+            // ÜBUNG 3: Wann ist der letzte Test (Max von Exam.Date) pro Lehrer und Fach der 5AHIF
+            //          in der Tabelle Exams?
             // *************************************************************************************
             {
                 List<object> result = null!;
@@ -97,11 +83,11 @@ namespace Grouping
             }
 
             // *************************************************************************************
-            // ÜBUNG 4: Wie viele Klassen sind pro Tag und Stunde gleichzeitig im Haus?
+            // ÜBUNG 4: Wie viele Klassen sind pro Tag und Stunde (PeriodNr) gleichzeitig im Haus?
             //          Hinweis: Gruppiere zuerst nach Tag und Stunde in Lesson. Für die Ermittlung
             //          der Klassenanzahl zähle die eindeutigen KlassenIDs, indem mit Distinct eine
             //          Liste dieser IDs (Id) erzeugt wird und dann mit Count() gezählt wird.
-            //          Es sind mit OrderByDescending(g=>g.ClassCount).Take(5) nur die 5
+            //          Es sind mit OrderByDescending(g=>g.ClassCount).Take(6) nur die 6
             //          "stärksten" Stunden auszugeben.
             // *************************************************************************************
             {
@@ -111,7 +97,11 @@ namespace Grouping
             }
 
             // *************************************************************************************
-            // ÜBUNG 5: Wie viele Klassen gibt es pro Abteilung?
+            // ÜBUNG 5: Die 5AHIF möchte wissen, in welchem Monat sie wie viele Tests hat.
+            //          Hinweis: Mit den Properties Month und Year kann auf das Monat bzw. Jahr
+            //          eines DateTime Wertes zugegriffen werden. Die Ausgabe in DisplayMonth kann
+            //          $"{mydate.Year:00}-{mydate.Month:00}" (mydate ist zu ersetzen)
+            //          erzeugt werden
             // *************************************************************************************
             {
                 List<object> result = null!;
@@ -120,23 +110,13 @@ namespace Grouping
             }
 
             // *************************************************************************************
-            // ÜBUNG 6: Wie die vorige Übung, allerdings sind nur Abteilungen
-            //          mit mehr als 10 Klassen auszugeben.
-            //          Hinweis: Filtere mit Where nach dem Erstellen der Objekte mit Department
-            //                   und Count
+            // ÜBUNG 6: Erstelle für jeden Lehrer eine Liste der Fächer, die er unterrichtet. Es
+            // sind nur die ersten 10 Datensätze auszugeben. Das kann mit
+            // .OrderBy(t=>t.TeacherId).Take(10)
             // *************************************************************************************
             {
                 List<object> result = null!;
                 Console.WriteLine("RESULT6");
-                WriteJson(result);
-            }
-
-            // *************************************************************************************
-            // ÜBUNG 7: Wann ist der letzte Test (Max von Exam.Date) pro Lehrer und Fach der 5AHIF
-            //          in der Tabelle Exams?
-            {
-                List<object> result = null!;
-                Console.WriteLine("RESULT7");
                 WriteJson(result);
             }
         }

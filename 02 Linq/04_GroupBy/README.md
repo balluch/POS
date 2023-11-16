@@ -170,136 +170,31 @@ Die korrekten Ausgaben sind folgende:
 ```text
 RESULT1
 [
-    {"TeacherId":"AF","Subjects":["RISL"]},{"TeacherId":"AGU","Subjects":["AP4","WPT_4"]},
-    {"TeacherId":"AH","Subjects":["NVS1","OPS"]},
-    {"TeacherId":"AMA","Subjects":["AP4","ITPR","NVS1","NVS1x","NVS1y","NWT_1x","NWT_1y","NWT_4A","NWT1"]},
-    {"TeacherId":"AT","Subjects":["D","Dx","RE"]},
-    {"TeacherId":"BAE","Subjects":["EWD","KGKP","MTKG"]},
-    {"TeacherId":"BAM","Subjects":["DBI1","POS1"]},
-    {"TeacherId":"BAN","Subjects":["DBI1","DBI1y","DBI2x"]},
-    {"TeacherId":"BAR","Subjects":["BMG2","FMGTK","SOPK"]},
-    {"TeacherId":"BEC","Subjects":["MGAN","MPAN","SOPK"]}
+    {"Department":"HIF","Count":23},
+    {"Department":"AIF","Count":12},
+    {"Department":"HWI","Count":11},
+    {"Department":"HMN","Count":10},
+    {"Department":"BIF","Count":9},
+    {"Department":"HBG","Count":9},
+    {"Department":"FIT","Count":7},
+    {"Department":"CIF","Count":6},
+    {"Department":"CMN","Count":6},
+    {"Department":"KIF","Count":6},
+    {"Department":"HKU","Count":5},
+    {"Department":"VIF","Count":5},
+    {"Department":"KKU","Count":4},
+    {"Department":"BKU","Count":2},
+    {"Department":"O","Count":1}
 ]
 
 RESULT2
 [
-{   "DisplayMonth":"2020-04",
-    "Exams":[
-        "Date":"2020-04-01T00:00:00","Teacher":"PC","Subject":"AMx"},
-        "Date":"2020-04-01T00:00:00","Teacher":"PC","Subject":"AMy"},
-        "Date":"2020-04-07T00:00:00","Teacher":"SH","Subject":"PRE"},
-        "Date":"2020-04-08T00:00:00","Teacher":"SO","Subject":"E1y"},
-        "Date":"2020-04-24T00:00:00","Teacher":"NAI","Subject":"Dy"},
-        "Date":"2020-04-30T00:00:00","Teacher":"AH","Subject":"OPS"}]},
-{   "DisplayMonth":"2020-07",
-    "Exams":[
-        "Date":"2020-07-02T00:00:00","Teacher":"BH","Subject":"NVS1"}]},
-{   "DisplayMonth":"2020-05",
-    "Exams":[
-        "Date":"2020-05-26T00:00:00","Teacher":"BH","Subject":"OPS"}]},
-{   "DisplayMonth":"2020-01",
-    "Exams":[
-        "Date":"2020-01-01T00:00:00","Teacher":"SO","Subject":"E1x"},
-        "Date":"2020-01-08T00:00:00","Teacher":"GC","Subject":"BWM1"},
-        "Date":"2020-01-16T00:00:00","Teacher":"SWH","Subject":"NVS1"}]},
-{   "DisplayMonth":"2019-09",
-    "Exams":[
-        "Date":"2019-09-05T00:00:00","Teacher":"GC","Subject":"BWM2"},
-        "Date":"2019-09-29T00:00:00","Teacher":"KSR","Subject":"GAD"},
-        "Date":"2019-09-30T00:00:00","Teacher":"KUE","Subject":"PRE"}]},
-{   "DisplayMonth":"2020-06",
-    "Exams":[
-        "Date":"2020-06-14T00:00:00","Teacher":"GC","Subject":"BWM3"},
-        "Date":"2020-06-24T00:00:00","Teacher":"HAF","Subject":"BAP"}]},
-{   "DisplayMonth":"2019-11",
-    "Exams":[
-        "Date":"2019-11-03T00:00:00","Teacher":"PUA","Subject":"IOT"},
-        "Date":"2019-11-11T00:00:00","Teacher":"GRJ","Subject":"BAP"},
-        "Date":"2019-11-24T00:00:00","Teacher":"NAI","Subject":"Dx"}]},
-{   "DisplayMonth":"2020-02",
-    "Exams":[
-        "Date":"2020-02-15T00:00:00","Teacher":"GRJ","Subject":"POS1"},
-        "Date":"2020-02-15T00:00:00","Teacher":"HIK","Subject":"DBI1"},
-        "Date":"2020-02-22T00:00:00","Teacher":"SZ","Subject":"POS1"}]},
-{   "DisplayMonth":"2019-12",
-    "Exams":[
-        "Date":"2019-12-04T00:00:00","Teacher":"SK","Subject":"GAD"},
-        "Date":"2019-12-13T00:00:00","Teacher":"HW","Subject":"IOT"},
-        "Date":"2019-12-21T00:00:00","Teacher":"TT","Subject":"PRE"},
-        "Date":"2019-12-26T00:00:00","Teacher":"RA","Subject":"DBI1"}]}]
-
-RESULT3
-[
-{
-    "PupilId":3175,"Firstname":"Batuhan","Lastname":"Akcay",
-    "Exams":[
-        "Subject":"OPS","Termine":[{"TeacherId":"AH","Date":"2020-04-30T00:00:00","PeriodNr":1},{"TeacherId":"BH","Date":"2020-05-26T00:00:00","PeriodNr":9}]},
-        "Subject":"NVS1","Termine":[{"TeacherId":"BH","Date":"2020-07-02T00:00:00","PeriodNr":1},{"TeacherId":"SWH","Date":"2020-01-16T00:00:00","PeriodNr":3}]},
-        "Subject":"BWM1","Termine":[{"TeacherId":"GC","Date":"2020-01-08T00:00:00","PeriodNr":3}]},
-        "Subject":"BWM2","Termine":[{"TeacherId":"GC","Date":"2019-09-05T00:00:00","PeriodNr":2}]},
-        "Subject":"BWM3","Termine":[{"TeacherId":"GC","Date":"2020-06-14T00:00:00","PeriodNr":2}]},
-        "Subject":"BAP","Termine":[{"TeacherId":"GRJ","Date":"2019-11-11T00:00:00","PeriodNr":7},{"TeacherId":"HAF","Date":"2020-06-24T00:00:00","PeriodNr":2}]},
-        "Subject":"POS1","Termine":[{"TeacherId":"GRJ","Date":"2020-02-15T00:00:00","PeriodNr":7},{"TeacherId":"SZ","Date":"2020-02-22T00:00:00","PeriodNr":10}]},
-        "Subject":"DBI1","Termine":[{"TeacherId":"HIK","Date":"2020-02-15T00:00:00","PeriodNr":4},{"TeacherId":"RA","Date":"2019-12-26T00:00:00","PeriodNr":5}]},
-        "Subject":"IOT","Termine":[{"TeacherId":"HW","Date":"2019-12-13T00:00:00","PeriodNr":7},{"TeacherId":"PUA","Date":"2019-11-03T00:00:00","PeriodNr":10}]},
-        "Subject":"GAD","Termine":[{"TeacherId":"KSR","Date":"2019-09-29T00:00:00","PeriodNr":5},{"TeacherId":"SK","Date":"2019-12-04T00:00:00","PeriodNr":6}]},
-        "Subject":"PRE","Termine":[{"TeacherId":"KUE","Date":"2019-09-30T00:00:00","PeriodNr":8},{"TeacherId":"SH","Date":"2020-04-07T00:00:00","PeriodNr":3},{"TeacherId":"TT","Date":"2019-12-21T00:00:00","PeriodNr":3}]},
-        "Subject":"Dx","Termine":[{"TeacherId":"NAI","Date":"2019-11-24T00:00:00","PeriodNr":1}]},
-        "Subject":"Dy","Termine":[{"TeacherId":"NAI","Date":"2020-04-24T00:00:00","PeriodNr":3}]},
-        "Subject":"AMx","Termine":[{"TeacherId":"PC","Date":"2020-04-01T00:00:00","PeriodNr":9}]},
-        "Subject":"AMy","Termine":[{"TeacherId":"PC","Date":"2020-04-01T00:00:00","PeriodNr":9}]},
-        "Subject":"E1x","Termine":[{"TeacherId":"SO","Date":"2020-01-01T00:00:00","PeriodNr":3}]},
-        "Subject":"E1y","Termine":[{"TeacherId":"SO","Date":"2020-04-08T00:00:00","PeriodNr":4}]}]},
-{
-    "PupilId":3176,"Firstname":"Teryilla","Lastname":"Amaichigh",
-    "Exams":[
-        "Subject":"OPS","Termine":[{"TeacherId":"AH","Date":"2020-04-30T00:00:00","PeriodNr":1},{"TeacherId":"BH","Date":"2020-05-26T00:00:00","PeriodNr":9}]},
-        "Subject":"NVS1","Termine":[{"TeacherId":"BH","Date":"2020-07-02T00:00:00","PeriodNr":1},{"TeacherId":"SWH","Date":"2020-01-16T00:00:00","PeriodNr":3}]},
-        "Subject":"BWM1","Termine":[{"TeacherId":"GC","Date":"2020-01-08T00:00:00","PeriodNr":3}]},
-        "Subject":"BWM2","Termine":[{"TeacherId":"GC","Date":"2019-09-05T00:00:00","PeriodNr":2}]},
-        "Subject":"BWM3","Termine":[{"TeacherId":"GC","Date":"2020-06-14T00:00:00","PeriodNr":2}]},
-        "Subject":"BAP","Termine":[{"TeacherId":"GRJ","Date":"2019-11-11T00:00:00","PeriodNr":7},{"TeacherId":"HAF","Date":"2020-06-24T00:00:00","PeriodNr":2}]},
-        "Subject":"POS1","Termine":[{"TeacherId":"GRJ","Date":"2020-02-15T00:00:00","PeriodNr":7},{"TeacherId":"SZ","Date":"2020-02-22T00:00:00","PeriodNr":10}]},
-        "Subject":"DBI1","Termine":[{"TeacherId":"HIK","Date":"2020-02-15T00:00:00","PeriodNr":4},{"TeacherId":"RA","Date":"2019-12-26T00:00:00","PeriodNr":5}]},
-        "Subject":"IOT","Termine":[{"TeacherId":"HW","Date":"2019-12-13T00:00:00","PeriodNr":7},{"TeacherId":"PUA","Date":"2019-11-03T00:00:00","PeriodNr":10}]},
-        "Subject":"GAD","Termine":[{"TeacherId":"KSR","Date":"2019-09-29T00:00:00","PeriodNr":5},{"TeacherId":"SK","Date":"2019-12-04T00:00:00","PeriodNr":6}]},
-        "Subject":"PRE","Termine":[{"TeacherId":"KUE","Date":"2019-09-30T00:00:00","PeriodNr":8},{"TeacherId":"SH","Date":"2020-04-07T00:00:00","PeriodNr":3},{"TeacherId":"TT","Date":"2019-12-21T00:00:00","PeriodNr":3}]},
-        "Subject":"Dx","Termine":[{"TeacherId":"NAI","Date":"2019-11-24T00:00:00","PeriodNr":1}]},
-        "Subject":"Dy","Termine":[{"TeacherId":"NAI","Date":"2020-04-24T00:00:00","PeriodNr":3}]},
-        "Subject":"AMx","Termine":[{"TeacherId":"PC","Date":"2020-04-01T00:00:00","PeriodNr":9}]},
-        "Subject":"AMy","Termine":[{"TeacherId":"PC","Date":"2020-04-01T00:00:00","PeriodNr":9}]},
-        "Subject":"E1x","Termine":[{"TeacherId":"SO","Date":"2020-01-01T00:00:00","PeriodNr":3}]},
-        "Subject":"E1y","Termine":[{"TeacherId":"SO","Date":"2020-04-08T00:00:00","PeriodNr":4}]}]}]
-
-RESULT4
-[
-    {"Day":4,"Hour":3,"ClassCount":69},{"Day":2,"Hour":4,"ClassCount":68},{"Day":3,"Hour":3,"ClassCount":67},
-    {"Day":4,"Hour":2,"ClassCount":67},{"Day":3,"Hour":4,"ClassCount":67}
+    {"Department":"HIF","Count":23},
+    {"Department":"AIF","Count":12},
+    {"Department":"HWI","Count":11}
 ]
 
-RESULT5
-[{"Department":"FIT","Count":7},
-{"Department":"HBG","Count":9},
-{"Department":"HIF","Count":23},
-{"Department":"HKU","Count":5},
-{"Department":"HMN","Count":10},
-{"Department":"HWI","Count":11},
-{"Department":"O","Count":1},
-{"Department":"VIF","Count":5},
-{"Department":"AIF","Count":12},
-{"Department":"BIF","Count":9},
-{"Department":"CIF","Count":6},
-{"Department":"CMN","Count":6},
-{"Department":"KIF","Count":6},
-{"Department":"KKU","Count":4},
-{"Department":"BKU","Count":2}]
-
-RESULT6
-[{"Department":"HIF","Count":23},
-{"Department":"HWI","Count":11},
-{"Department":"AIF","Count":12}]
-
-RESULT7
+RESULT3
 [
     {"Teacher":"AH","Subject":"OPS","LastExam":"2020-04-30T00:00:00"},
     {"Teacher":"BH","Subject":"NVS1","LastExam":"2020-07-02T00:00:00"},
@@ -327,5 +222,41 @@ RESULT7
     {"Teacher":"SWH","Subject":"NVS1","LastExam":"2020-01-16T00:00:00"},
     {"Teacher":"SZ","Subject":"POS1","LastExam":"2020-02-22T00:00:00"},
     {"Teacher":"TT","Subject":"PRE","LastExam":"2019-12-21T00:00:00"}
+]
+
+RESULT4
+[
+    {"Day":4,"Hour":3,"ClassCount":69},
+    {"Day":2,"Hour":4,"ClassCount":68},
+    {"Day":2,"Hour":3,"ClassCount":67},
+    {"Day":3,"Hour":3,"ClassCount":67},
+    {"Day":3,"Hour":4,"ClassCount":67},
+    {"Day":4,"Hour":2,"ClassCount":67}
+]
+
+RESULT5
+[
+    {"DisplayMonth": "2019-09","ExamCount": 3},
+    {"DisplayMonth": "2019-11","ExamCount": 3},
+    {"DisplayMonth": "2019-12","ExamCount": 4},
+    {"DisplayMonth": "2020-01","ExamCount": 3},
+    {"DisplayMonth": "2020-02","ExamCount": 3},
+    {"DisplayMonth": "2020-04","ExamCount": 6},
+    {"DisplayMonth": "2020-05","ExamCount": 1},
+    {"DisplayMonth": "2020-06","ExamCount": 2},
+    {"DisplayMonth": "2020-07","ExamCount": 1}
+]
+
+RESULT6
+[
+    {"TeacherId":"AF","Subjects":["RISL"]},{"TeacherId":"AGU","Subjects":["AP4","WPT_4"]},
+    {"TeacherId":"AH","Subjects":["NVS1","OPS"]},
+    {"TeacherId":"AMA","Subjects":["AP4","ITPR","NVS1","NVS1x","NVS1y","NWT_1x","NWT_1y","NWT_4A","NWT1"]},
+    {"TeacherId":"AT","Subjects":["D","Dx","RE"]},
+    {"TeacherId":"BAE","Subjects":["EWD","KGKP","MTKG"]},
+    {"TeacherId":"BAM","Subjects":["DBI1","POS1"]},
+    {"TeacherId":"BAN","Subjects":["DBI1","DBI1y","DBI2x"]},
+    {"TeacherId":"BAR","Subjects":["BMG2","FMGTK","SOPK"]},
+    {"TeacherId":"BEC","Subjects":["MGAN","MPAN","SOPK"]}
 ]
 ```
