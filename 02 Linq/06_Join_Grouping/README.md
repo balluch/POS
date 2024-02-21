@@ -181,8 +181,9 @@ select new
 
 ## Übungen
 
-Öffne die Solution *[Grouping.sln](Grouping)* und löse die Aufgaben in der Datei *[Program.cs](Grouping/Program.cs)*.
-Schreibe deine Abfragen statt `(object)null;` in die Variablen. Die korrekten Ausgaben sind unter dem Klassendiagramm aufgelistet.
+Öffne die Solution *[Grouping.sln](Grouping)* und löse die Aufgaben in der Datei *[Program.cs](Grouping/Program.cs)* mit Hilfe der 
+Query Syntax von LINQ. Schreibe deine Abfragen statt `(object)null;` in die Variablen. 
+Die korrekten Ausgaben sind unter dem Klassendiagramm aufgelistet.
 
 ![](classdiagram.png)
 
