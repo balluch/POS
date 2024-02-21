@@ -23,6 +23,7 @@ Auch in anderen Sprachen gibt es solche Ansätze.
 3. [Projektionen mit Select](03_Projection/README.md)
 4. [Gruppierungen mit GroupBy](04_GroupBy/README.md)
 5. [Die Query Syntax](05_QuerySyntax/README.md)
+6. [Join und Gruppierung](06_Join_Grouping/README.md)
 
 ![](linq-architecture-diagram.png)
 
