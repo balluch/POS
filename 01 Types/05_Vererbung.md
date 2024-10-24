@@ -52,7 +52,7 @@ Die Funktionsweise ist in den Kommentaren des nachfolgenden Codes erklärt.
 ## Ein kleines UML Klassendiagramm
 
 - Abstrakte Klassen wie die Klasse *Person* werden mit A gekennzeichnet.
-- Abstrakte Methoden oder Felder sind kursiv wie *IsFullAge* (ist volljährig)
+- Abstrakte Methoden oder Felder sind kursiv wie *Accountname*
 - Enumerations werden mit einem E gekennzeichnet so wie in *Salutation* (= Anrede)
 - Die großen Pfeile bedeuten Vererbung und zeigen Richtung Basisklasse.
 - Spitze Pfeile wie von School nach Teacher bedeuten *Navigierbarkeit* (nicht 1:n!). Ich kann

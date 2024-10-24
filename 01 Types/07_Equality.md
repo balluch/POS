@@ -239,8 +239,8 @@ class Person : IEquatable<Person>
 Speichern wir nun Instanzen in einem *HashSet&lt;T&gt;* und ändern nachträglich die Nummer einer Person,
 hat unser Hashset auf einmal 2 idente Instanzen:
 ```c#
-Person pe1 = new Person { Nr = 1, Vorname = "VN1", Zunamne = "ZN1" };
-Person pe2 = new Person { Nr = 2, Vorname = "VN2", Zunamne = "ZN2" };
+Person pe1 = new Person { Nr = 1, Vorname = "VN1", Zuname = "ZN1" };
+Person pe2 = new Person { Nr = 2, Vorname = "VN2", Zuname = "ZN2" };
 HashSet<Person> personHash = new HashSet<Person>() { pe1, pe2 };
 pe2.Nr = 1;                        // Nachträgliche Änderung von pe2.
 // personHash hat nun 2 Einträge, die jedoch lt. Equals() ident sind!
