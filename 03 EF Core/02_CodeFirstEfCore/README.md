@@ -504,10 +504,10 @@ cd TeamsManager
 md TeamsManager.Application
 cd TeamsManager.Application
 dotnet new classlib
-dotnet add package Microsoft.EntityFrameworkCore --version 6.*
-dotnet add package Microsoft.EntityFrameworkCore.Sqlite --version 6.*
-dotnet add package Microsoft.EntityFrameworkCore.Proxies --version 6.*
-dotnet add package Bogus --version 34.*
+dotnet add package Microsoft.EntityFrameworkCore --version 8.*
+dotnet add package Microsoft.EntityFrameworkCore.Sqlite --version 8.*
+dotnet add package Microsoft.EntityFrameworkCore.Proxies --version 8.*
+dotnet add package Bogus --version 35.*
 cd ..
 md TeamsManager.Test
 cd TeamsManager.Test
