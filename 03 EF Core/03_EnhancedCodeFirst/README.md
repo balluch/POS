@@ -323,7 +323,7 @@ Verwende die Übung des letzten Kapitels (*Klassenmodelle persistieren mit EF Co
 definiere folgende Einstellungen:
 
 - Die Tabellennamen sollen alle in der Einzahl (Team, HandIn, ...) angelegt werden.
-- Der Teamname soll maximal 64 Stellen lang sein, die Klasse maximal 16 Stellen.
+- Der Teamname soll maximal 64 Stellen lang sein und die Spalte für die Schulklasse soll maximal 16 Stellen umfassen.
 - Alle anderen string Properties (Name, Mail) sollen maximal 255 Stellen lang sein.
 - In den Klassen *HandIn*, *Task*, *Student* und *Teacher* soll jeweils eine GUID als alternativer Primärschlüssel zur Verfügung stehen.
 - Stelle mit einem Unique Index sicher, dass ein Student pro Task nur eine Abgabe einreichen kann.
