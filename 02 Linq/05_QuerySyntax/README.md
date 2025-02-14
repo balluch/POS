@@ -61,7 +61,7 @@ Abbildung zeigt den Vergleich der *Method Syntax* und der *Query Syntax*:
   wieder zurück. In diesem Beispiel wird *Pupil* auf einen neuen Typ projiziert.
 
 ### Kombination von Query und Method Syntax
-Es stellt sich natürlich bei vielen die Frage, was nun "besser" ist. Der gute .NET Programmiert
+Es stellt sich natürlich bei vielen die Frage, was nun "besser" ist. Der gute .NET Programmier kennt
 beide Formen, denn diese haben unterschiedliche Stärken.
 
 - Die CLR kennt nur Methodenaufrufe, daher wird die Query Syntax vom Compiler in die
