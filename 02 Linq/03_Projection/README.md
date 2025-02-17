@@ -203,7 +203,7 @@ var uebung2 = db.Students.Select(s => new
       s.Lastname,                    // Name wird übernommen (Lastname)
       s.Firstname,                   // Name wird übernommen (Firstname)
       ExamsCount = s.Exams.Count()   // Propertyname muss festlegt werden.
-}).OrderBy(s => s.ExamsCount).ThenBy(s => s.Lastname);
+});
 // Funktioniert nicht:
 // uebung2 = "Ein String".
 ```
