@@ -3,7 +3,7 @@
 ## Inhalt
 
 - [GetRoutes](01_GetRoutes/README.md)
-- [PostRoutes](02_PostPutDeleteRoutes/README.md)
+- [PostPutDeleteRoutes](02_PostPutDeleteRoutes/README.md)
 
 ## Anlegen eines ASP.NET Core WebAPI
 
