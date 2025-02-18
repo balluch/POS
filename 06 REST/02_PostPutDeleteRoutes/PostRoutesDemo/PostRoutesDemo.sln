@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35122.118
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PostRoutesDemo", "PostRoutesDemo.csproj", "{024EED0F-5AEA-4E6B-A0DC-4022FB55BBC8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PostRoutesDemo", "PostRoutesDemo\PostRoutesDemo.csproj", "{A3BB2FFC-A759-4660-9031-58FB81CEEC2F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{024EED0F-5AEA-4E6B-A0DC-4022FB55BBC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{024EED0F-5AEA-4E6B-A0DC-4022FB55BBC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{024EED0F-5AEA-4E6B-A0DC-4022FB55BBC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{024EED0F-5AEA-4E6B-A0DC-4022FB55BBC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3BB2FFC-A759-4660-9031-58FB81CEEC2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3BB2FFC-A759-4660-9031-58FB81CEEC2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3BB2FFC-A759-4660-9031-58FB81CEEC2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3BB2FFC-A759-4660-9031-58FB81CEEC2F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {744F8672-96E4-48D1-828E-9E21C26CDEC1}
+		SolutionGuid = {951BC701-954D-44BC-8393-F43A2DD318DF}
 	EndGlobalSection
 EndGlobal
