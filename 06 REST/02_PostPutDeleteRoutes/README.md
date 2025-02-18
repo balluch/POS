@@ -1,7 +1,5 @@
 # POST, PUT und DELETE Requests
 
-Ein Musterprojekt steht im Ordner [PostRoutesDemo](PostRoutesDemo) zur Verfügung.
-
 Bisher haben wir nur auf sogenannte GET Requests reagiert. GET Requests stellen im Webservice
 einfache Abfragen dar. Da über ein Webservice auch Daten eingefügt, geändert oder gelöscht werden
 sollen, müssen wir die HTTP Methoden POST, PUT und DELETE betrachten.
@@ -174,23 +172,6 @@ wird die Datei *Program.cs* so abgeändert, dass *app.UseFileServer()* aufgerufe
 app.UseFileServer(); // Liefert statische Files und legt index.html als Standarddokument fest.
 // ...
 ```
-
-## Senden der Requests mit Postman
-
-Zum Testen von POST, PUT und DELETE Requests reicht der Browser nicht mehr aus. Deswegen verwenden wir
-das Programm [Postman](https://www.getpostman.com/). Wird das Programm zum ersten Mal gestartet, erscheint
-ein Dialog zur Registrierung. Mit dem Link "Continue without an account" ganz unten und
-anschließend "Open Lightweight API Client" kann ohne Registrierung gearbeitet werden.
-
-Da die SSL Zertifikate des Servers selbst signiert werden, muss der SSL Check in Postman unter
-*File > Settings* deaktiviert werden:
-
-![](postman_disable_ssl_check.png)
-
-Nun kann ein POST Request gesendet werden. Achte bei *raw* darauf, dass der Mediatype auf *JSON*
-gesetzt ist, sonst antwortet der Server mit der Fehlermeldung *unsupported media type*.
-
-![](postman_send_data.png)
 
 ## Übung
 
