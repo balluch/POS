@@ -1,5 +1,7 @@
 # POST, PUT und DELETE Requests
 
+Ein Musterprojekt steht im Ordner [PostRoutesDemo](PostRoutesDemo) zur Verfügung.
+
 Bisher haben wir nur auf sogenannte GET Requests reagiert. GET Requests stellen im Webservice
 einfache Abfragen dar. Da über ein Webservice auch Daten eingefügt, geändert oder gelöscht werden
 sollen, müssen wir die HTTP Methoden POST, PUT und DELETE betrachten. Für Änderungen kann PUT oder
