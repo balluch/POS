@@ -2,7 +2,12 @@
 
 Bisher haben wir nur auf sogenannte GET Requests reagiert. GET Requests stellen im Webservice
 einfache Abfragen dar. Da über ein Webservice auch Daten eingefügt, geändert oder gelöscht werden
-sollen, müssen wir die HTTP Methoden POST, PUT und DELETE betrachten.
+sollen, müssen wir die HTTP Methoden POST, PUT und DELETE betrachten. Für Änderungen kann PUT oder
+auch PATCH verwendet werden. PATCH wird verwendet, um Teilaktualisierungen auf eine Ressource 
+anzuwenden, was bedeutet, dass nur die Felder, die geändert werden müssen, im Anforderungstext 
+gesendet werden. PUT wird verwendet, um die gesamte Ressource durch eine neue Darstellung zu 
+ersetzen, was bedeutet, dass alle Felder der Ressource im Anforderungstext gesendet werden, auch 
+wenn sie nicht geändert werden.
 
 ![](crud_rest.png)
 
