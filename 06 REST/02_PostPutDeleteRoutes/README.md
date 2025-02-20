@@ -192,6 +192,6 @@ Implementiere die folgenden Requests:
 | PUT                      | /api/class/(klassenname)        | HTTP 204 (No Content); HTTP 400 wenn sich der Name der Klasse ändern soll; HTTP 404 wenn die Klasse nicht gefunden wurde. |
 | DELETE                   | /api/class/(klassenname)        | HTTP 204 (No Content); HTTP 404 wenn die Klasse nicht gefunden wurde; HTTP 409 wenn die Klasse noch Schüler hat. |
 
-Nachdem die Routen in Postman getestet wurden, kopiere die Datei *index.html* in die Datei *klasse.html*.
+Nachdem die Routen getestet wurden, kopiere die Datei *index.html* in die Datei *klasse.html*.
 Ändere das HTML Formular so, dass ein POST Request an */api/class/fromForm* auch von diesem HTML
 Formular aus erfolgreich verarbeitet werden kann.
