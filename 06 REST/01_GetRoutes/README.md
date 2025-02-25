@@ -93,8 +93,8 @@ Die *Ok()* Funktion sieht hier vielleicht seltsam aus, ist aber eine normale Met
 bekommt und ein Ergebnis mit dem HTTP Status 200 liefert.
 
 *GetMethod3()* liefert ein Ergebnis mit der Angabe des erwarteten Datentyps. Diese Variante ist
-wenn möglich vorzuziehen. Bei der Rückgabe von anonymen Typen muss natürlich Variante 1 gewählt
-werden.
+wenn möglich vorzuziehen. Bei der Rückgabe von anonymen Typen muss natürlich die vorherige Variante 
+gewählt werden.
 
 Die *Get...Async()* Methoden sind die Entsprechungen der beschriebenen Methoden als *async* Methoden.
 Sie sind vorzuziehen, wenn Datenbankabfragen gemacht werden.
