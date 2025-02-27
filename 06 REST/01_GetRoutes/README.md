@@ -188,7 +188,7 @@ Schrägstich am Anfang eine absolute Route definieren:
 ```c#
 [HttpGet("/api/count")]
 [ProducesResponseType(StatusCodes.Status200OK)]
-public int GetPupilCount(int id)
+public int GetPupilCount()
 {
     return db.Pupil?.Count() ?? 0;
 }
